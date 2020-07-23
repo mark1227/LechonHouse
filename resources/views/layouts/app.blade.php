@@ -12,13 +12,15 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
+    
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/basic.css" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -73,10 +75,24 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+            <main class="container">
+                @yield('content')
+            </main>
+        
     </div>
+
+<!-- Footer -->
+    <!--<footer class="page-footer font-small indigo">-->
+    <footer class="copyright">
+    <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://facebook.com/boypats"> Mark Anthony Patriana</a>
+        </div>
+    <!-- Copyright -->
+
+    </footer>
+<!-- Footer -->
+   
 </body>
+
 </html>
