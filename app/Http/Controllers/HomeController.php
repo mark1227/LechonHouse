@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -22,7 +23,20 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        return view('userdash');
+    {   
+        $usertype = auth()->user()->usertype;
+        //$user = User::find($user);
+        //dd($user->usertype);
+        //$usertype = Auth::user()->usertype;
+        //dd(Auth::user()->usertype);
+        if($usertype == "admin"){
+            $page = "admindash";
+        }
+        else{
+            $page = "userdash";
+        }
+        return view($page);
+        
+        //return view('home');
     }
 }
