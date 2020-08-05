@@ -8,35 +8,53 @@
         </div>
         <div class="row align-items-center">
             <div class="col-xl">
+              <a href = "{{ url('/profile') }}">
               <button type="button" class="btn btn-info" id="buttons">Profile</button>
+              </a>
             </div>
             <div class="col-xl">
+              <a href = "{{ url('/orders') }}">
               <button type="button" class="btn btn-info" id="buttons">Orders</button>
+              </a>
             </div>
             <div class="col-xl">
+              <a href = "{{ url('/cart') }}">
               <button type="button" class="btn btn-info" id="buttons">Cart</button>
+              </a>
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col-xl">
+              <a href = "{{ url('/payment') }}">
               <button type="button" class="btn btn-info" id="buttons">Payment</button>
+              </a>
             </div>
             <div class="col-xl">
+              <a href = "{{ url('/history') }}">
               <button type="button" class="btn btn-info" id="buttons">History</button>
+              </a>
             </div>
             <div class="col-xl">
+              <a href = "{{ url('/notification') }}">
               <button type="button" class="btn btn-info" id="buttons">Notification</button>
+              </a>
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col-xl">
+              <a href = "{{ url('/manage') }}">
               <button type="button" class="btn btn-info" id="buttons">Manage</button>
+              </a>
             </div>
             <div class="col-xl">
+              <a href = "{{ url('/reports') }}">
               <button type="button" class="btn btn-info" id="buttons">Reports</button>
+              </a>
             </div>
             <div class="col-xl">
+              <a href = "{{ url('/blacklist') }}">
               <button type="button" class="btn btn-info" id="buttons">Blacklists</button>
+              </a>
             </div>
         </div>
         

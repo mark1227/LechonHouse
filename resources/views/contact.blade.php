@@ -4,7 +4,7 @@
 
 <div class="content">
 <div class="title m-b-md">
-                   <H1>Services</H1>
+                   <H1>Contact</H1>
 </div>
 </div>
 @endsection

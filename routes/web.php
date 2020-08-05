@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('dashboard');
 
 Route::get('/order', function () {
     return view('order');
@@ -29,14 +29,55 @@ Route::get('/services', function () {
     return view('services');
 });
 
-Route::get('/order', function () {
-    return view('order');
+Route::get('/product', function () {
+    return view('product');
 });
 
-Route::get('/order', function () {
-    return view('order');
+Route::get('/contact', function () {
+    return view('contact');
 });
 
-Route::post('/products', 'ProductsController@index')->name('orders.post');
-Route::get('/orders/{username}', 'OrdersController@index')->name('orders.show');
-Route::get('/profile/{username}', 'ProfileController@index')->name('profile.show');
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/orders', function () {
+    return view('orders');
+});
+
+Route::get('/cart', function () {
+    return view('cart');
+});
+
+Route::get('/history', function () {
+    return view('history');
+});
+
+Route::get('/payment', function () {
+    return view('payment');
+});
+
+Route::get('/notification', function () {
+    return view('notification');
+});
+
+Route::get('/manage', function () {
+    return view('manage');
+});
+
+Route::get('/reports', function () {
+    return view('reports');
+});
+
+Route::get('/blacklist', function () {
+    return view('blacklist');
+});
+
+
+Route::post('/products', 'ProductsController@index')->name('products.post');
+//Route::get('/orders/{username}', 'OrdersController@index')->name('orders.show');
+//Route::get('/profile/{username}', 'ProfileController@index')->name('profile.show');
